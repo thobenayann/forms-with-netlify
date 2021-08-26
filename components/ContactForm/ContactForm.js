@@ -14,7 +14,8 @@ function ContactForm() {
                     <form
                         className="bg-gradient-to-br from-[#e95810c9] to-[#e20008ce] rounded-2xl px-10 py-4 backdrop-filter backdrop-opacity-50 w-11/12 sm:w-full lg:w-3/5"
                         name="contact"
-                        action="POST"
+                        method="POST"
+                        action="/success"
                         data-netlify="true"  
                     >
                         <input type="hidden" name="form-name" value="contact" />
@@ -112,7 +113,8 @@ function ContactForm() {
                     <form
                         className="bg-gradient-to-br from-[#e95810c9] to-[#e20008ce] rounded-2xl px-10 mt-28 sm:mt-0 py-4 backdrop-filter backdrop-opacity-50 w-11/12 sm:w-full lg:w-3/5 shadow-card"
                         name="votre projet"
-                        action="POST"
+                        method="POST"
+                        action="/success"
                         data-netlify="true" 
                     >
                     <input type="hidden" name="form-your-project" value="votre projet" />
