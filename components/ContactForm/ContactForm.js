@@ -103,6 +103,7 @@ function ContactForm() {
                         </div>
                     </form>
                 </section>
+                {/* Project form */}
                 <section className="flex flex-col justify-center items-center h-contactFormSection relative p-2">
                     <div className="flex flex-col items-center absolute top-16">
                         <div className="text-center">
@@ -117,7 +118,7 @@ function ContactForm() {
                         action="/success"
                         data-netlify="true" 
                     >
-                    <input type="hidden" name="form-your-project" value="votre projet" />
+                    <input type="hidden" name="votre projet" value="votre projet" />
                         <div className="flex flex-col sm:flex-row justify-between py-6 px-10">
                             <div className="md:w-60 mr-2 mb-4 w-full lg:mb-0 lg:mr-0">
                                 <input
@@ -185,12 +186,12 @@ function ContactForm() {
                             <div className="md:w-60 w-full">
                                 <input
                                     className="rounded-3xl shadow-md md:w-60 w-full"
-                                    id="thickness"
-                                    name="thickness"
+                                    id="Epaisseur en mm"
+                                    name="Epaisseur en mm"
                                     type="number"
                                     min="0"
                                     max="12"
-                                    placeholder="Quelle épaisseur max?(en cm)"
+                                    placeholder="Quelle épaisseur max?(en mm)"
                                     // value={this.state.numberOfGuests}
                                     // onChange={this.handleInputChange}
                                     />
@@ -200,13 +201,13 @@ function ContactForm() {
                                 <legend className="px-4 py-2 text-gray-600 rounded-full bg-white w-full sm:w-80 border-gray-600 border">Quelle(s) matière(s) allez vous souder ?</legend>
                                 <div className="flex justify-around sm:w-80">
                                     <div className="text-blue-300 flex items-center">
-                                        Acier<input className="ml-2" type="checkbox" name="Acier" value="Acier"/>
+                                        Acier<input className="ml-2" type="checkbox" name="Matière" value="Acier"/>
                                     </div>
                                     <div className="text-blue-600 flex items-center">
-                                        Inox<input className="ml-2" type="checkbox" name="Inox" value="Inox"/>
+                                        Inox<input className="ml-2" type="checkbox" name="Matière" value="Inox"/>
                                     </div>
                                     <div className="text-green-500 flex items-center">
-                                        Alu<input className="ml-2" type="checkbox" name="Alu" value="Alu"/>
+                                        Alu<input className="ml-2" type="checkbox" name="Matière" value="Alu"/>
                                     </div>
                                 </div>  
                             </fieldset>     
