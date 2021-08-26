@@ -13,8 +13,9 @@ function ContactForm() {
                     </div>
                     <form
                         className="bg-gradient-to-br from-[#e95810c9] to-[#e20008ce] rounded-2xl px-10 py-4 backdrop-filter backdrop-opacity-50 w-11/12 sm:w-full lg:w-3/5"
+                        name="contact"
                         action="POST"
-                        data-netlify="true"    
+                        data-netlify="true"  
                     >
                         <div className="flex flex-col sm:flex-row justify-between py-6 px-10">
                             <div className="md:w-60 mr-2 mb-4 w-full lg:mb-0 lg:mr-0">
@@ -109,6 +110,7 @@ function ContactForm() {
                     </div>
                     <form
                         className="bg-gradient-to-br from-[#e95810c9] to-[#e20008ce] rounded-2xl px-10 mt-28 sm:mt-0 py-4 backdrop-filter backdrop-opacity-50 w-11/12 sm:w-full lg:w-3/5 shadow-card"
+                        name="votre projet"
                         action="POST"
                         data-netlify="true" 
                     >
