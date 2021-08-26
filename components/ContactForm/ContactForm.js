@@ -17,6 +17,7 @@ function ContactForm() {
                         action="POST"
                         data-netlify="true"  
                     >
+                        <input type="hidden" name="form-name" value="contact" />
                         <div className="flex flex-col sm:flex-row justify-between py-6 px-10">
                             <div className="md:w-60 mr-2 mb-4 w-full lg:mb-0 lg:mr-0">
                                 <label className="flex flex-col">
@@ -114,6 +115,7 @@ function ContactForm() {
                         action="POST"
                         data-netlify="true" 
                     >
+                    <input type="hidden" name="form-your-project" value="votre projet" />
                         <div className="flex flex-col sm:flex-row justify-between py-6 px-10">
                             <div className="md:w-60 mr-2 mb-4 w-full lg:mb-0 lg:mr-0">
                                 <input
