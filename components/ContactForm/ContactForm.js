@@ -7,18 +7,18 @@ function ContactForm() {
                 <section className="flex flex-col justify-center items-center h-contactFormSection bg-contact-bg-form bg-no-repeat bg-cover relative shadow-card p-2">
                     <div className="flex flex-col items-center absolute top-16">
                         <div className="text-center">
-                            <h2 className="font-raleway flex flex-col justify-around items-center">
+                            <h2 className="font-raleway flex flex-col justify-around items-center text-black">
                             Contact<span className="border-[#0B4FB2] border-b-2 w-16 p-3"></span></h2>
                         </div>
                     </div>
                     <form
                         className="bg-gradient-to-br from-[#e95810c9] to-[#e20008ce] rounded-2xl px-10 py-4 backdrop-filter backdrop-opacity-50 w-11/12 sm:w-full lg:w-3/5"
-                        name="contact"
+                        name="Formulaire: Contact"
                         method="POST"
                         action="/success"
                         data-netlify="true"  
                     >
-                        <input type="hidden" name="form-name" value="contact" />
+                        <input type="hidden" name="Formulaire: Contact" value="Formulaire: Contact" />
                         <div className="flex flex-col sm:flex-row justify-between py-6 px-10">
                             <div className="md:w-60 mr-2 mb-4 w-full lg:mb-0 lg:mr-0">
                                 <label className="flex flex-col">
@@ -113,12 +113,12 @@ function ContactForm() {
                     </div>
                     <form
                         className="bg-gradient-to-br from-[#e95810c9] to-[#e20008ce] rounded-2xl px-10 mt-28 sm:mt-0 py-4 backdrop-filter backdrop-opacity-50 w-11/12 sm:w-full lg:w-3/5 shadow-card"
-                        name="votre projet"
+                        name="Formulaire : Votre projet"
                         method="POST"
                         action="/success"
-                        data-netlify="true" 
+                        data-netlify="true"
                     >
-                    <input type="hidden" name="votre projet" value="votre projet" />
+                    <input type="hidden" name="Formulaire : Votre projet" value="Formulaire : Votre projet" />
                         <div className="flex flex-col sm:flex-row justify-between py-6 px-10">
                             <div className="md:w-60 mr-2 mb-4 w-full lg:mb-0 lg:mr-0">
                                 <input
@@ -210,7 +210,19 @@ function ContactForm() {
                                         Alu<input className="ml-2" type="checkbox" name="Matière" value="Alu"/>
                                     </div>
                                 </div>  
-                            </fieldset>     
+                            </fieldset>
+                            <label className="flex flex-col pb-6 md:px-10">
+                                <textarea
+                                    className="rounded-xl form-textarea shadow-md resize-none"
+                                    id="message"
+                                    name="message"
+                                    type="text"
+                                    rows="2"
+                                    placeholder="Ajoutez un message"
+                                    // value={this.state.numberOfGuests}
+                                    // onChange={this.handleInputChange}
+                                    />
+                            </label>
                         <div className="flex justify-end">
                             <button className="btn text-xs lg:text-base hover:ring drop-shadow-3xl">Envoyer</button>
                         </div>
